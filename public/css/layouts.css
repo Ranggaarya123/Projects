@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    height: 100%;
+    margin: 0;
+}
+
+.sidebar {
+    width: 250px;
+    padding: 16px;
+    border-right: 1px solid #d1d5db;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    background-color: gainsboro;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
