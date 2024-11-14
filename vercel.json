@@ -1,0 +1,45 @@
+{
+    "version": 2,
+    "framework": null,
+    "functions": {
+        "api/index.php": { "runtime": "vercel-php@0.6.0" }
+    },
+    "routes": [
+        { "src": "/build/(.*)", "dest": "/public/build/" },
+        { "src": "/(.*)", "dest": "/api/index.php" }
+    ],
+    "public": true,
+    "buildCommand": "vite build",
+    "outputDirectory": "public",
+    "env": {
+        "APP_ENV": "local",
+        "APP_DEBUG": "true",
+        "APP_TIMEZONE":"Asia/Jakarta",
+        "APP_URL": "http://localhost",
+        "APP_KEY": "base64:1mayJK+Dd3J9Pg9rAEpNfZQ5wVNvtiNntYwgQ0T4z3c=",
+        "APP_CONFIG_CACHE": "/tmp/config.php",
+        "APP_EVENTS_CACHE": "/tmp/events.php",
+        "APP_PACKAGES_CACHE": "/tmp/packages.php",
+        "APP_ROUTES_CACHE": "/tmp/routes.php",
+        "APP_SERVICES_CACHE": "/tmp/services.php",
+        "VIEW_COMPILED_PATH": "/tmp",
+        "CACHE_DRIVER": "array",
+        "LOG_CHANNEL": "stack",
+        "SESSION_DRIVER": "database",
+        "DB_CONNECTION": "pgsql",
+        "DB_HOST": "aws-0-ap-southeast-1.pooler.supabase.com",
+        "DB_PORT": "6543",
+        "DB_DATABASE": "postgres",
+        "DB_USERNAME": "postgres.qaoxaqomomlzrsebczue",
+        "DB_PASSWORD": "@Qq25839848!",
+        "MAIL_MAILER": "smtp",
+        "MAIL_HOST": "smtp.gmail.com",
+        "MAIL_PORT": "587",
+        "MAIL_USERNAME": "ryzenhoks14@gmail.com",
+        "MAIL_PASSWORD": "cexrstifxqedryue",
+        "MAIL_ENCRYPTION": "tls",
+        "MAIL_FROM_ADDRESS": "ryzenhoks14@gmail.com",
+        "MAIL_FROM_NAME": "Telkom Akses Jogja",
+        "TELEGRAM_BOT_TOKEN": "7298464069:AAFKt2PJcQV3X4hTy9SXhOFPvyHhvPkdMjk"
+    }
+}
