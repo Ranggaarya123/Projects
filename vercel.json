@@ -2,7 +2,7 @@
     "version": 2,
     "framework": null,
     "functions": {
-        "api/index.php": { "runtime": "vercel-php@0.6.0" }
+        "api/index.php": { "runtime": "vercel-php@0.5.0" }
     },
     "routes": [
         { "src": "/build/(.*)", "dest": "/public/build/" },
@@ -31,7 +31,6 @@
         "DB_PORT": "6543",
         "DB_DATABASE": "postgres",
         "DB_USERNAME": "postgres.qaoxaqomomlzrsebczue",
-        "DB_PASSWORD": "@Qq25839848!",
         "MAIL_MAILER": "smtp",
         "MAIL_HOST": "smtp.gmail.com",
         "MAIL_PORT": "587",
