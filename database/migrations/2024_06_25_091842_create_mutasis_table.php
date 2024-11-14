@@ -15,7 +15,7 @@ class CreateMutasisTable extends Migration
     {
         Schema::create('mutasis', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->uuid('user_id');
+            $table->integer('user_id');
             $table->string('mutasi_type');
             $table->string('surat_keterangan_aktif');
             $table->string('scan_ktp');

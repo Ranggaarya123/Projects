@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('brevets', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->uuid('user_id');
+            $table->integer('user_id');
             $table->string('nama');
             $table->string('mitra');
             $table->string('brevet');

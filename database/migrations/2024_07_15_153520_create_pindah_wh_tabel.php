@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('pindah_wh', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->uuid('user_id');
+            $table->integer('user_id');
             $table->string('sto_sebelum');
             $table->string('kode_wh_sebelum');
             $table->string('sto_tujuan');

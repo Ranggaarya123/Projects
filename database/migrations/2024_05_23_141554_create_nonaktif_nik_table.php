@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('nonaktif_nik', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->uuid('user_id');
+            $table->integer('user_id');
             $table->string('surat_permohonan');
             $table->boolean('status_aktivasi_nik')->default(false);
             $table->text('komentar')->nullable();

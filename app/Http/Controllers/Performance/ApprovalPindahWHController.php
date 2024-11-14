@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Performance;
 
 use App\Http\Controllers\Controller;
-use App\MoDels\MitraManajemen;
+use App\Models\MitraManajemen;
 use App\Models\ValidasiTacticalModel;
 use App\Models\DuplicateWHModel;
 use App\Models\PindahWHModel;

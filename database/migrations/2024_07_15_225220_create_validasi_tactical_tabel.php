@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('validasi_tactical', function (Blueprint $table) {
             $table->uuid('id')->primary();
             $table->string('nama');
-            $table->uuid('user_id');
+            $table->integer('user_id');
             $table->string('capture_tactical');
             $table->boolean('status_validasi')->default(false);
             $table->text('komentar')->nullable(); // Add this line

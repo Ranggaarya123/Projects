@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('mitra_manajemen', function (Blueprint $table) {
             $table->uuid('id');
-            $table->uuid('user_id')->primary();
+            $table->integer('user_id')->primary();
             $table->string('username');
             $table->string('witel')->nullable();
             $table->string('alokasi')->nullable();

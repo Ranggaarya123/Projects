@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('duplicate_wh', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->uuid('user_id');
+            $table->integer('user_id');
             $table->string('sto');
             $table->string('kode_wh');
             $table->boolean('status_duplicate')->default(false);

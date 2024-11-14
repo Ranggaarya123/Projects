@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('create_mitra', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->uuid('user_id');
+            $table->integer('user_id');
             $table->string('username');
             $table->string('khs_mitra');
             $table->string('surat_keterangan_aktif');

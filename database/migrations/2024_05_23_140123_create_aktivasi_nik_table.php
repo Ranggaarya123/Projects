@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('aktivasi_nik', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->uuid('user_id');
+            $table->integer('user_id');
             $table->string('surat_keterangan_aktif');
             $table->string('scan_bpjs');
             $table->string('scan_ktp');
